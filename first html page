@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Login</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #c1121f, #780000);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            background: #ffffff;
+            width: 360px;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 45px;
+            color: #c1121f;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-weight: 600;
+            color: #780000;
+        }
+
+        .input-group {
+            text-align: left;
+            margin: 15px 0;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            color: #780000;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ffccd5;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #c1121f;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #780000;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .footer a {
+            color: #c1121f;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <div class="icon">🩸</div>
+    <h2>Donor Login</h2>
+
+    <form>
+        <div class="input-group">
+            <label for="donor-id">Email / Donor ID</label>
+            <input type="text" id="donor-id" placeholder="Enter your donor ID" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <button class="btn" type="submit">LOGIN</button>
+    </form>
+
+    <div class="footer">
+        <p><a href="#">Forgot Password?</a></p>
+        <p>New donor? <a href="#">Register here</a></p>
+    </div>
+</div>
+
+</body>
+</html>
